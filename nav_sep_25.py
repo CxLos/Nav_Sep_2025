@@ -992,7 +992,7 @@ support_pie = px.pie(
         color='black'
     )
 ).update_traces(
-    rotation=110,
+    rotation=20,
     # textinfo='value+percent',
     texttemplate='%{value}<br>(%{percent:.1%})',
     hovertemplate='<b>%{label}</b>: %{value}<extra></extra>'
@@ -1351,6 +1351,7 @@ zip_pie = px.pie(
     ),
     legend_title='ZIP Code'
 ).update_traces(
+    rotation=90,
     texttemplate='%{value}<br>(%{percent:.1%})',
     textfont_size=16,
     hovertemplate='<b>ZIP Code</b>: %{label}<br><b>Count</b>: %{value}<br><b>Percent</b>: %{percent}<extra></extra>'
